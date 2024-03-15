@@ -22,6 +22,11 @@ public class InventoryUIScript : MonoBehaviour
     {
         int index = 0;
         foreach(ItemData item in inventory.items) {
+            if(index == inventory.selectedItem){
+                slots[index].image.color = new Color(1,0,0,0.2f);
+            }else{
+                slots[index].image.color = new Color(0,0,0,0.2f);
+            }
             slots[index].AddItemToSlot(item);
             index++;
         }
@@ -29,7 +34,6 @@ public class InventoryUIScript : MonoBehaviour
             for(int i = index; i<slots.Length;i++){
                 slots[i].ClearItemslot();
             }
-
         }
     }
 }

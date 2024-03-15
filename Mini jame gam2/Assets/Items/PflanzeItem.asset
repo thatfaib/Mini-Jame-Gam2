@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   displayName: SamenItem1
-  icon: {fileID: 0}
+  icon: {fileID: 7482667652216324306, guid: 735c12df37f3bf94c91473da193a2294, type: 3}
   prefab: {fileID: 5653422379753513668, guid: d9631d23c2d48634f8e18281a81aff86, type: 3}

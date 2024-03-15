@@ -2,7 +2,7 @@ using System.Collections;
 using System.Linq;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerController  : MonoBehaviour
 {
     float horizontal;
     float speed = 6f;
@@ -22,9 +22,15 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] Rigidbody2D rb;
     [SerializeField] LayerMask groundLayer;
-    public ItemData Pflanze;
-    public ItemData Ananas;
-    public ItemData Mango;
+    [SerializeField] ItemData Item1;
+    [SerializeField] ItemData Item2;
+    [SerializeField] ItemData Item3;
+    [SerializeField] ItemData Item4;
+
+   
+    void Start(){
+        rb = gameObject.GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
@@ -66,17 +72,27 @@ public class PlayerMovement : MonoBehaviour
 
         Flip();
 
-        if(Input.GetKeyDown(KeyCode.E)){
-            InventoryScript.instance.AddItem(Pflanze);
+      
+        if(Input.GetKeyDown(KeyCode.Alpha1)){
+            InventoryScript.instance.AddItem(Item1);
         }
-        if(Input.GetKeyDown(KeyCode.F)){
-            InventoryScript.instance.AddItem(Ananas);
+        if(Input.GetKeyDown(KeyCode.Alpha2)){
+            InventoryScript.instance.AddItem(Item2);
         }
-        if(Input.GetKeyDown(KeyCode.G)){
-            InventoryScript.instance.AddItem(Mango);
+        if(Input.GetKeyDown(KeyCode.Alpha3)){
+            InventoryScript.instance.AddItem(Item3);
+        }
+        if(Input.GetKeyDown(KeyCode.Alpha4)){
+            InventoryScript.instance.AddItem(Item4);
         }
         if(Input.GetKeyDown(KeyCode.H)){
             InventoryScript.instance.RemoveItem(InventoryScript.instance.items.LastOrDefault<ItemData>());
+        }
+        if(Input.GetKeyDown(KeyCode.E)){
+            InventoryScript.instance.selectNext();
+        }
+        if(Input.GetKeyDown(KeyCode.Q)){
+            InventoryScript.instance.selectPrevious();
         }
 
        }

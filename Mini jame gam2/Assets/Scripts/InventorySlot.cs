@@ -3,9 +3,11 @@ using UnityEngine.UI;
 using UnityEngine;
 
 public class InventorySlot : MonoBehaviour
-{
+{   
     [SerializeField] Image icon;
-    ItemData item;  
+    public Image image;
+    ItemData item;
+    
 
     public void AddItemToSlot(ItemData newItem){
         item = newItem;
@@ -20,6 +22,8 @@ public class InventorySlot : MonoBehaviour
 
         icon.sprite = null;
         icon.enabled = false;
+
+        image.color = new Color(0,0,0,0.2f);
     
     }
 

@@ -5,18 +5,18 @@ using UnityEngine;
 
 public class InventoryScript : MonoBehaviour
 {
-    [SerializeField] InventoryUIScript UI;
-    [SerializeField] int inventorySize = 4;
-
     public static InventoryScript instance;
 
     void Awake(){
         instance = this;
     }
-
-    public List<ItemData> items = new List<ItemData>();       
+   
     public delegate void OnInventoryChanged();
     public OnInventoryChanged onInventoryChangedCallback;
+
+    public List<ItemData> items = new List<ItemData>(); 
+    public int selectedItem = 0; 
+    [SerializeField] int inventorySize = 4;
 
     public void AddItem(ItemData itemToAdd){
         if(items.Count < inventorySize) {
@@ -34,5 +34,25 @@ public class InventoryScript : MonoBehaviour
         }
     }
     
+    public void selectNext(){
+        selectedItem++;
+        if(selectedItem >= items.Count){
+            selectedItem=0;
+        }
+        if (onInventoryChangedCallback != null){
+                onInventoryChangedCallback.Invoke();
+        }
+       
+    }
+    public void selectPrevious(){
+        selectedItem--;
+        if(selectedItem < 0){
+            selectedItem = items.Count-1;
+        }
+        if (onInventoryChangedCallback != null){
+                onInventoryChangedCallback.Invoke();
+        }
+       
+    }
     
 }
