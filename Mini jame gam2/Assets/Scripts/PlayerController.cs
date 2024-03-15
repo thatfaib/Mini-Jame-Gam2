@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     float horizontal;
-    float speed = 8f;
-    float jumpingPower = 16f;
+    float speed = 6f;
+    float jumpingPower = 12f;
     bool isFacingRight = true;
 
     bool isJumping; 
@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour
 
     float jumpBufferTime = 0.2f;
     float jumpBufferCounter;
+
+    [SerializeField] GameObject rayEnd;
+    [SerializeField] GameObject rayStart;
 
     [SerializeField] Rigidbody2D rb;
     [SerializeField] LayerMask groundLayer;
@@ -84,9 +87,12 @@ public class PlayerMovement : MonoBehaviour
     }
 
     bool isGrounded(){
-        float rayLength = 0.6f;
+        float rayLength = 0.05f;
 
-        if (Physics2D.Raycast(transform.position,Vector2.down, rayLength, groundLayer)){
+        if (Physics2D.Raycast(rayStart.transform.position, Vector2.down, rayLength, groundLayer)){
+            return true;
+        }
+        if (Physics2D.Raycast(rayEnd.transform.position, Vector2.down, rayLength, groundLayer)) {
             return true;
         }
         return false;
