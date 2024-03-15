@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     float jumpingPower = 16f;
     bool isFacingRight = true;
 
-    bool isJumping;
+    bool isJumping; 
     
     float coyoteTime = 0.2f;
     float coyoteTimeCounter;
@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
         return false;
     }
    
-    private void Flip()
+    void Flip()
     {
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
         {
@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private IEnumerator JumpCooldown()
+    IEnumerator JumpCooldown()
     {
         isJumping = true;
         yield return new WaitForSeconds(0.4f);
