@@ -173,19 +173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2952902824122955306, guid: a06fc607b0a0b054caede789e1085c51, type: 3}
       propertyPath: m_Name
-      value: Player (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4429255733555961705, guid: a06fc607b0a0b054caede789e1085c51, type: 3}
-      propertyPath: Mango
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4429255733555961705, guid: a06fc607b0a0b054caede789e1085c51, type: 3}
-      propertyPath: Ananas
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4429255733555961705, guid: a06fc607b0a0b054caede789e1085c51, type: 3}
-      propertyPath: Pflanze
-      value: 
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2430,9 +2418,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51952811465e15c4b8b0165e4760361b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UI: {fileID: 0}
-  inventorySize: 4
   items: []
+  selectedItem: 0
+  inventorySize: 4
 --- !u!4 &2111307199
 Transform:
   m_ObjectHideFlags: 0

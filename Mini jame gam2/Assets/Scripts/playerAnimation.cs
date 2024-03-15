@@ -15,13 +15,13 @@ public class playerAnimation : MonoBehaviour
 
     void Update() {
         if (animator != null) {
-            if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.Space)) {
+            if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) && player.velocity.y == 0) {
                 animator.SetTrigger("Walk");
             }
-            else if(Input.GetKey(KeyCode.Space) && player.velocity.y != 0) {
+            else if(player.velocity.y != 0) {
                 animator.SetTrigger("Jump");
             }
-            else {
+            else if(player.velocity.x == 0 && player.velocity.y == 0){
                 animator.SetTrigger("Idle");
             }
             

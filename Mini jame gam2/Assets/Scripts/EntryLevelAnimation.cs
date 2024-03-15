@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NextLevelLoad : MonoBehaviour {
+public class EntryLevelAnimation : MonoBehaviour
+{
 
-    // File > Build Settings > Scenes in Build
-    [SerializeField]
-    int nextSceneID = 0;
     [SerializeField]
     GameObject transitionSprite;
     [SerializeField]
@@ -15,16 +14,15 @@ public class NextLevelLoad : MonoBehaviour {
 
     bool start = false;
 
-    void OnTriggerEnter2D(UnityEngine.Collider2D collision) {
+    void Start() {
         StartCoroutine(waitThenLoad());
     }
 
-     void Update() {
-        if(start == true) {
-            transitionSprite.transform.position -= transitionSprite.transform.position * Time.deltaTime * 1.5f;
+    void Update() {
+        if (start == true) {
+            transitionSprite.transform.position -= new Vector3(Time.deltaTime * 16, 0, 0);
 
             if (transitionSprite.transform.position.x < moveTowards.transform.position.x) {
-                SceneManager.LoadScene(nextSceneID);
                 start = false;
             }
         }
@@ -34,5 +32,4 @@ public class NextLevelLoad : MonoBehaviour {
         yield return new WaitForSeconds(0.5f);
         start = true;
     }
-
 }
