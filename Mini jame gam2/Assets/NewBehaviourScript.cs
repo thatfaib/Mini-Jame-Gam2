@@ -7,12 +7,15 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         //puenis
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+        Debug.Log("Amogus")
+
     }
 }
