@@ -6,29 +6,25 @@ using UnityEngine;
 public class SamenScript : MonoBehaviour
 {
     bool canPlant;
-    [SerializeField] LayerMask topfLayer;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(canPlant);
+        if(canPlant && Input.GetKeyDown(KeyCode.E)){
+            Debug.Log("planzen");
+        }
+        
         
     }
 
     void OnTriggerEnter2D(Collider2D collision){
-        if(collision.gameObject.layer == topfLayer){
+        if(collision.gameObject.layer == LayerMask.NameToLayer("Töpfe")){
             canPlant = true;
         }
 
     }
     void OnTriggerExit2D(Collider2D collision){
-       if(collision.gameObject.layer == topfLayer){
+       if(collision.gameObject.layer == LayerMask.NameToLayer("Töpfe")){
             canPlant = false;
         }
 

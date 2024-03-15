@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -18,8 +19,11 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] Rigidbody2D rb;
     [SerializeField] LayerMask groundLayer;
+    public ItemData Pflanze;
+    public ItemData Ananas;
+    public ItemData Mango;
 
-     void Update()
+    void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
@@ -58,7 +62,21 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Flip();
-    }
+
+        if(Input.GetKeyDown(KeyCode.E)){
+            InventoryScript.instance.AddItem(Pflanze);
+        }
+        if(Input.GetKeyDown(KeyCode.F)){
+            InventoryScript.instance.AddItem(Ananas);
+        }
+        if(Input.GetKeyDown(KeyCode.G)){
+            InventoryScript.instance.AddItem(Mango);
+        }
+        if(Input.GetKeyDown(KeyCode.H)){
+            InventoryScript.instance.RemoveItem(InventoryScript.instance.items.LastOrDefault<ItemData>());
+        }
+
+       }
 
     void FixedUpdate()
     {
