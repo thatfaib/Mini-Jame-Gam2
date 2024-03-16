@@ -22,6 +22,7 @@ public class PlayerController  : MonoBehaviour
 
     [SerializeField] Rigidbody2D rb;
     [SerializeField] LayerMask groundLayer;
+    [SerializeField] LayerMask plantLayer;
     [SerializeField] ItemData Item1;
     [SerializeField] ItemData Item2;
     [SerializeField] ItemData Item3;
@@ -109,6 +110,12 @@ public class PlayerController  : MonoBehaviour
             return true;
         }
         if (Physics2D.Raycast(rayEnd.transform.position, Vector2.down, rayLength, groundLayer)) {
+            return true;
+        }
+        if (Physics2D.Raycast(rayEnd.transform.position, Vector2.down, rayLength, plantLayer)) {
+            return true;
+        }
+        if (Physics2D.Raycast(rayEnd.transform.position, Vector2.down, rayLength, plantLayer)) {
             return true;
         }
         return false;

@@ -184,6 +184,10 @@ PrefabInstance:
       propertyPath: shovel
       value: 
       objectReference: {fileID: 37920058}
+    - target: {fileID: 8887317084625933885, guid: a06fc607b0a0b054caede789e1085c51, type: 3}
+      propertyPath: plantLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -639,7 +643,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.18356177, b: 0.18356177, a: 1}
   m_FlipX: 0
@@ -660,7 +664,7 @@ Transform:
   m_GameObject: {fileID: 917325144}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.29, y: -5.62, z: 0}
+  m_LocalPosition: {x: -7.29, y: -5.7, z: 0}
   m_LocalScale: {x: 0.76, y: 0.65, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1056,7 +1060,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -4231,21 +4235,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6506501622580279008, guid: 3579d13a08c2286469fd9c6755ba4577, type: 3}
-      propertyPath: m_Radius
-      value: 0.85268545
+    - target: {fileID: 3270367744494287989, guid: 3579d13a08c2286469fd9c6755ba4577, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 6506501622580279008, guid: 3579d13a08c2286469fd9c6755ba4577, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.004831791
+    - target: {fileID: 3424367715315247543, guid: 3579d13a08c2286469fd9c6755ba4577, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8569362420923440795, guid: 3579d13a08c2286469fd9c6755ba4577, type: 3}
       propertyPath: m_Name
       value: Vertical Plant
-      objectReference: {fileID: 0}
-    - target: {fileID: 8569362420923440795, guid: 3579d13a08c2286469fd9c6755ba4577, type: 3}
-      propertyPath: m_TagString
-      value: Plant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
