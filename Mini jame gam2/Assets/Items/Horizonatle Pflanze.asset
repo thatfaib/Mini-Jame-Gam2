@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65e50ab4c511364983beb1610606735, type: 3}
   m_Name: Horizonatle Pflanze
   m_EditorClassIdentifier: 
-  id: 0
+  id: 1
   displayName: 
+<<<<<<< Updated upstream
   icon: {fileID: 21300000, guid: 56da67e2e2721b349936fb9f8ee93d9a, type: 3}
+=======
+  icon: {fileID: 8205496862245117471, guid: b6e3b66909c8a6d469e54885071cff45, type: 3}
+>>>>>>> Stashed changes
   prefab: {fileID: 5984986063477290966, guid: 1e47529d6a8a2634d973d309e9ab1a89, type: 3}
   canBePlanted: 1

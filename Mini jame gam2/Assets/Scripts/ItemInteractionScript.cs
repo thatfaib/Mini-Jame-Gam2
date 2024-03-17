@@ -33,10 +33,10 @@ public class ItemInteractionScript : MonoBehaviour
                 Plant(pot, item);
                 audioSrc.Play();
             }
-            if(canDestroyPlant && item.id == 4){         
+        }
+        if(canDestroyPlant && Input.GetKeyDown(KeyCode.R)){         
                 Shovel(plant);
             }
-        }
     }
 
     void Plant(GameObject pot, ItemData plant){
