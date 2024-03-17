@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -17,8 +18,9 @@ public class InventoryScript : MonoBehaviour
     public ItemData[] allItems;
     void Start(){
         allItems = Resources.FindObjectsOfTypeAll<ItemData>();
+        allItems.OrderBy(item=>item.id);
     }
-    
+
     public List<ItemData> items = new List<ItemData>(); 
     public int selectedItem = 0; 
     [SerializeField] int inventorySize = 4;

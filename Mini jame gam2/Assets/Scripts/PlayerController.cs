@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerController  : MonoBehaviour
 {
     float horizontal;
-    float speed = 6f;
-    float jumpingPower = 12f;
+    float speed = 5f;
+    float jumpingPower = 8f;
     bool isFacingRight = true;
 
     bool isJumping; 
@@ -66,7 +66,7 @@ public class PlayerController  : MonoBehaviour
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.8f);
 
             coyoteTimeCounter = 0f;
         }

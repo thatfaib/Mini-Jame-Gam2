@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BouncePlant : MonoBehaviour
@@ -7,25 +8,20 @@ public class BouncePlant : MonoBehaviour
     Rigidbody2D rb;
     [SerializeField] ParticleSystem jumpEffect;
     ParticleSystem ps = null;
+    GameObject player;
 
-    bool bounce = false;
 
     void Start(){
-        rb = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
-        
-    }
-    void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.CompareTag("Player")) {
-            bounce = true;
-        }
+        player = GameObject.FindWithTag("Player");
+        rb = player.GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdate() {
-        if(bounce) {
-            rb.AddForce(transform.up * 15f, ForceMode2D.Impulse);
-            ps = Instantiate(jumpEffect);
-            bounce = false;
+    void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject == player) {
+            rb.AddForce(Vector2.up * 12f, ForceMode2D.Impulse);
+            ps = Instantiate(jumpEffect,gameObject.transform.position,gameObject.transform.rotation );
         }
     }
+    
 
 }
