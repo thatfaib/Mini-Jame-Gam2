@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d65e50ab4c511364983beb1610606735, type: 3}
-  m_Name: Mango
+  m_Name: Schaufel
   m_EditorClassIdentifier: 
-  id: 0
+  id: 4
   displayName: 
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   prefab: {fileID: 0}
+  canBePlanted: 0

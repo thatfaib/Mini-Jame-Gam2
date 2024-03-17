@@ -76,8 +76,8 @@ GameObject:
   - component: {fileID: 5500341368992007337}
   - component: {fileID: 8887317084625933885}
   - component: {fileID: 1174823271944105400}
+  - component: {fileID: 2892018617170317115}
   - component: {fileID: 4525555366315411552}
-  - component: {fileID: 5127743243527917289}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -235,6 +235,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  plantLayer:
+    serializedVersion: 2
+    m_Bits: 0
   Item1: {fileID: 11400000, guid: 84036a053dc54574fae5a3f787aa3fd9, type: 2}
   Item2: {fileID: 11400000, guid: 19579f498ad36e7469f7dcb0ef8c258f, type: 2}
   Item3: {fileID: 11400000, guid: eed7cf70c0cddf74099a3c274f264f9d, type: 2}
@@ -252,6 +255,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5500341368992007337}
+--- !u!114 &2892018617170317115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2952902824122955306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70aa84ddaa9c6994494afeb0a2c263d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potPrefab: {fileID: 0}
 --- !u!95 &4525555366315411552
 Animator:
   serializedVersion: 5
@@ -273,18 +289,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5127743243527917289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2952902824122955306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26f60a6d9bfc0d4fadacd6ac7ac5b35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3428705730037794899
 GameObject:
   m_ObjectHideFlags: 0

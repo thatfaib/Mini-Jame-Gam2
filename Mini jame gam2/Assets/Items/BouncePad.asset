@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d65e50ab4c511364983beb1610606735, type: 3}
-  m_Name: Ananas
+  m_Name: BouncePad
   m_EditorClassIdentifier: 
-  id: 0
+  id: 2
   displayName: 
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  prefab: {fileID: 0}
+  icon: {fileID: -2708881629613620102, guid: e8ea4c193f386f3429a569696a323f67, type: 3}
+  prefab: {fileID: 7366378811109033542, guid: 1f345671381fd0e45abdeb7d69ead41f, type: 3}
+  canBePlanted: 1

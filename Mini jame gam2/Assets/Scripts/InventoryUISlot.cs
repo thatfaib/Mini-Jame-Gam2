@@ -2,7 +2,7 @@ using UnityEngine.UI;
 
 using UnityEngine;
 
-public class InventorySlot : MonoBehaviour
+public class InventoryUISlot : MonoBehaviour
 {   
     [SerializeField] Image icon;
     public Image image;

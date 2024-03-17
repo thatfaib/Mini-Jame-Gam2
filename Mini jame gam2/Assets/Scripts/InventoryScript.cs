@@ -14,6 +14,11 @@ public class InventoryScript : MonoBehaviour
     public delegate void OnInventoryChanged();
     public OnInventoryChanged onInventoryChangedCallback;
 
+    public ItemData[] allItems;
+    void Start(){
+        allItems = Resources.FindObjectsOfTypeAll<ItemData>();
+    }
+    
     public List<ItemData> items = new List<ItemData>(); 
     public int selectedItem = 0; 
     [SerializeField] int inventorySize = 4;

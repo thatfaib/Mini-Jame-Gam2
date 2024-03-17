@@ -7,13 +7,13 @@ public class InventoryUIScript : MonoBehaviour
 {
     InventoryScript inventory;
     [SerializeField] Transform inventoryItems;
-    InventorySlot[] slots;
+    InventoryUISlot[] slots;
 
     void Start()
     {
         inventory = InventoryScript.instance;
         inventory.onInventoryChangedCallback += UpdateInventoryUI;
-        slots = inventoryItems.GetComponentsInChildren<InventorySlot>();
+        slots = inventoryItems.GetComponentsInChildren<InventoryUISlot>();
         UpdateInventoryUI();
     }
 

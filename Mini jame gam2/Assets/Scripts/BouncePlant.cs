@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class BouncePlant : MonoBehaviour
 {
-    [SerializeField]
     Rigidbody2D rb;
-    [SerializeField]
-    ParticleSystem jumpEffect;
-
+    [SerializeField] ParticleSystem jumpEffect;
     ParticleSystem ps = null;
 
     bool bounce = false;
 
+    void Start(){
+        rb = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
+        
+    }
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Player")) {
             bounce = true;
