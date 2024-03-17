@@ -21,6 +21,8 @@ public class InventoryScript : MonoBehaviour
         allItems.OrderBy(item=>item.id);
     }
 
+    public int keys = 0;
+
     public List<ItemData> items = new List<ItemData>(); 
     public int selectedItem = 0; 
     [SerializeField] int inventorySize = 4;
