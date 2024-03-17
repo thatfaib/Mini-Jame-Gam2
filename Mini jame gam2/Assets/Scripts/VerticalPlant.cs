@@ -5,14 +5,10 @@ using UnityEngine.UIElements;
 
 public class VerticalPlant : MonoBehaviour
 {
-    [SerializeField]
-    GameObject flowerHead;
-    [SerializeField]
-    bool active = false;
-    [SerializeField]
-    GameObject growLimit;
-    [SerializeField]
-    float speed = 1f;
+    [SerializeField] GameObject flowerHead;
+    [SerializeField] bool active = false;
+    [SerializeField] GameObject growLimit;
+    [SerializeField] float speed = 1f;
     float acceleration = 3f;
 
     void Update()

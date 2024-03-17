@@ -679,7 +679,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1659612072}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: onPlay
+        m_MethodName: onQuit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
