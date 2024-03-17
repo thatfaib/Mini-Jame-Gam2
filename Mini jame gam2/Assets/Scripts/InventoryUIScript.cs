@@ -26,12 +26,12 @@ public class InventoryUIScript : MonoBehaviour
             if(index == inventory.selectedItem){
                 //slots[index].image.color = new Color(1,0,0,0.2f);
                 Image childImage = slots[index].GetComponentsInChildren<Image>()[1];
-                childImage.color = new Color(1f, 1f, 1f, 0.2f);
+                childImage.color = new Color(1f, 1f, 1f, 1f);
             }
             else{
                 slots[index].image.color = new Color(1f,1f,1f,1f);
                 Image childImage = slots[index].GetComponentsInChildren<Image>()[1];
-                childImage.color = new Color(1f, 1f, 1f, 1f);
+                childImage.color = new Color(1f, 1f, 1f, 0.3f);
             }
             slots[index].AddItemToSlot(item);
             index++;
