@@ -237,7 +237,7 @@ MonoBehaviour:
   plantLayer:
     serializedVersion: 2
     m_Bits: 64
-  Item1: {fileID: 11400000, guid: 84036a053dc54574fae5a3f787aa3fd9, type: 2}
+  Item1: {fileID: 11400000, guid: 6a921f8f4743ef2438cbe47b80b3a31a, type: 2}
   Item2: {fileID: 11400000, guid: 19579f498ad36e7469f7dcb0ef8c258f, type: 2}
   Item3: {fileID: 11400000, guid: eed7cf70c0cddf74099a3c274f264f9d, type: 2}
   Item4: {fileID: 11400000, guid: c33e6bc638010314d83ad1b9a686ab99, type: 2}
