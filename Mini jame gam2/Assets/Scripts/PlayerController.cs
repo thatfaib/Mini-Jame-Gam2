@@ -17,6 +17,9 @@ public class PlayerController  : MonoBehaviour
     float jumpBufferTime = 0.2f;
     float jumpBufferCounter;
 
+    [SerializeField] AudioSource sound;
+    [SerializeField] AudioClip clipJump;
+
     [SerializeField] GameObject rayEnd;
     [SerializeField] GameObject rayStart;
 
@@ -31,6 +34,7 @@ public class PlayerController  : MonoBehaviour
    
     void Start(){
         rb = gameObject.GetComponent<Rigidbody2D>();
+        sound = gameObject.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -57,6 +61,9 @@ public class PlayerController  : MonoBehaviour
 
         if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f && !isJumping)
         {
+            clipJump = Resources.Load<AudioClip>("jump");
+            sound.clip = clipJump;
+            sound.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
 
             jumpBufferCounter = 0f;

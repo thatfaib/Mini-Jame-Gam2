@@ -14,7 +14,11 @@ public class ItemInteractionScript : MonoBehaviour
     GameObject pot;
     GameObject plant;
 
+    [SerializeField] AudioSource audioSrc;
+    [SerializeField] AudioClip clipGrow;
+
     void Start(){
+        audioSrc = GetComponent<AudioSource>(); 
         inventory  = InventoryScript.instance;
         potPrefab = Resources.Load<GameObject>("Topf");
     }
@@ -22,9 +26,12 @@ public class ItemInteractionScript : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.F) && inventory.items.Count>0){
+            clipGrow = Resources.Load<AudioClip>("grow");
+            audioSrc.clip = clipGrow;
             ItemData item = inventory.items[inventory.selectedItem];
             if(canPlant && item.canBePlanted){ 
-                Plant(pot, item); 
+                Plant(pot, item);
+                audioSrc.Play();
             }
             if(canDestroyPlant && item.id == 4){         
                 Shovel(plant);

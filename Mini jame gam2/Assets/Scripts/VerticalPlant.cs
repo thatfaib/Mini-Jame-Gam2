@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -10,6 +11,10 @@ public class VerticalPlant : MonoBehaviour
     [SerializeField] GameObject growLimit;
     [SerializeField] float speed = 1f;
     float acceleration = 3f;
+
+    private void Start() {
+        StartCoroutine(waitThenLoad());
+    }
 
     void Update()
     {
@@ -22,6 +27,11 @@ public class VerticalPlant : MonoBehaviour
                 speed = 2f;
             }
         }
+    }
+
+    IEnumerator waitThenLoad() {
+        yield return new WaitForSeconds(1.5f);
+        active = true;
     }
 
 }
