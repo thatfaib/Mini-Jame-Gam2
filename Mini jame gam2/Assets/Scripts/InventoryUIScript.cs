@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryUIScript : MonoBehaviour
 {
@@ -23,9 +24,14 @@ public class InventoryUIScript : MonoBehaviour
         int index = 0;
         foreach(ItemData item in inventory.items) {
             if(index == inventory.selectedItem){
-                slots[index].image.color = new Color(1,0,0,0.2f);
-            }else{
-                slots[index].image.color = new Color(0,0,0,0.2f);
+                //slots[index].image.color = new Color(1,0,0,0.2f);
+                Image childImage = slots[index].GetComponentsInChildren<Image>()[1];
+                childImage.color = new Color(1f, 1f, 1f, 0.2f);
+            }
+            else{
+                slots[index].image.color = new Color(1f,1f,1f,1f);
+                Image childImage = slots[index].GetComponentsInChildren<Image>()[1];
+                childImage.color = new Color(1f, 1f, 1f, 1f);
             }
             slots[index].AddItemToSlot(item);
             index++;

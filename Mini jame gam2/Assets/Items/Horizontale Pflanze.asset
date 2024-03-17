@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   displayName: Horizontale Pflanze
-  icon: {fileID: -8468615029533344670, guid: e86cf6e39db62d4458ebebf088baed4a, type: 3}
+  icon: {fileID: 21300000, guid: 56da67e2e2721b349936fb9f8ee93d9a, type: 3}
   prefab: {fileID: 816826893294442012, guid: a4f5f051cb2d0da439fd9cce8c24a043, type: 3}
   canBePlanted: 1

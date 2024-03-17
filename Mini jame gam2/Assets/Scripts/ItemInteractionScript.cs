@@ -16,6 +16,7 @@ public class ItemInteractionScript : MonoBehaviour
 
     void Start(){
         inventory  = InventoryScript.instance;
+        potPrefab = Resources.Load<GameObject>("Topf");
     }
 
     void Update()

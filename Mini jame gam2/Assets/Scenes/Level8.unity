@@ -197,12 +197,20 @@ PrefabInstance:
       value: Topf
       objectReference: {fileID: 0}
     - target: {fileID: 8936865737995747230, guid: 3d002890d70a6fb4ca9e4d15a6188814, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936865737995747230, guid: 3d002890d70a6fb4ca9e4d15a6188814, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936865737995747230, guid: 3d002890d70a6fb4ca9e4d15a6188814, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.83
       objectReference: {fileID: 0}
     - target: {fileID: 8936865737995747230, guid: 3d002890d70a6fb4ca9e4d15a6188814, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.43
+      value: -3.672
       objectReference: {fileID: 0}
     - target: {fileID: 8936865737995747230, guid: 3d002890d70a6fb4ca9e4d15a6188814, type: 3}
       propertyPath: m_LocalPosition.z
@@ -479,6 +487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 7647589902511917496, guid: 464ccfb204331014fa24031184114afe, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8046793133611431005, guid: 464ccfb204331014fa24031184114afe, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -534,7 +546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936865737995747230, guid: 3d002890d70a6fb4ca9e4d15a6188814, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.56
+      value: 2.32
       objectReference: {fileID: 0}
     - target: {fileID: 8936865737995747230, guid: 3d002890d70a6fb4ca9e4d15a6188814, type: 3}
       propertyPath: m_LocalPosition.z
@@ -738,6 +750,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1063212788234650957, guid: 46686215ef37a8c40b73a9da24b2690c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3182963890854371217, guid: 46686215ef37a8c40b73a9da24b2690c, type: 3}
       propertyPath: m_Size.y
       value: 14

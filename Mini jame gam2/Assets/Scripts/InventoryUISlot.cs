@@ -23,7 +23,7 @@ public class InventoryUISlot : MonoBehaviour
         icon.sprite = null;
         icon.enabled = false;
 
-        image.color = new Color(0,0,0,0.2f);
+       // image.color = new Color(0,0,0,0.8f);
     
     }
 

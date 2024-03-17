@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   displayName: 
-  icon: {fileID: 2109618450852937294, guid: ddcd19edf6b89a240b4ee026e12770f7, type: 3}
+  icon: {fileID: 21300000, guid: 6ad416ea053212447907d9d8e1fd7019, type: 3}
   prefab: {fileID: 8569362420923440795, guid: 3579d13a08c2286469fd9c6755ba4577, type: 3}
   canBePlanted: 1
