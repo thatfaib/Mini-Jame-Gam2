@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5941428609446116644}
   - component: {fileID: 8650312317776986579}
   - component: {fileID: 3657462366407469061}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Pusteblume
   m_TagString: Plant
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 966706957627297593}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Grow Limit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8545131034388009210}
   - component: {fileID: 8145686854602019509}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Plant Body
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5258469446381955329}
   - component: {fileID: 8935813727296767075}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Pot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 4243688859540417357}
   - component: {fileID: 2351780048956288883}
   - component: {fileID: 600133800964082517}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Flower Head
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.006763935, y: 0.5372405}
+  m_Offset: {x: 0.006763935, y: 0.69177556}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -365,7 +365,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0031548, y: 0.44849205}
+  m_Size: {x: 1.0031548, y: 0.15329504}
   m_EdgeRadius: 0
 --- !u!61 &2351780048956288883
 BoxCollider2D:
@@ -399,7 +399,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.0811586}
+  m_Offset: {x: 0, y: 1.1487906}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -410,7 +410,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.1138535}
+  m_Size: {x: 1, y: 0.97858953}
   m_EdgeRadius: 0
 --- !u!114 &600133800964082517
 MonoBehaviour:

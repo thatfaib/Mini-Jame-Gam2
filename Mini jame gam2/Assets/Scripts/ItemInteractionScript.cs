@@ -52,7 +52,6 @@ public class ItemInteractionScript : MonoBehaviour
         ItemData plantItem = allItems[0];
         Debug.Log(plant);  
         for(int i= 0; i< allItems.Length;i++){
-            Debug.Log(allItems[i]);
             if(allItems[i].canBePlanted && allItems[i].prefab.name +"(Clone)" == plant.name){
                 plantItem=allItems[i];
                 break;
@@ -71,6 +70,7 @@ public class ItemInteractionScript : MonoBehaviour
             canPlant = true;
         }
         if(collision.gameObject.layer == LayerMask.NameToLayer("Plant")){
+            Debug.Log(collision.gameObject);
             plant = collision.gameObject;
             canDestroyPlant = true;
         }

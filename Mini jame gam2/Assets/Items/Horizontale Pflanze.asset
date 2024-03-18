@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e50ab4c511364983beb1610606735, type: 3}
+  m_Name: Horizontale Pflanze
+  m_EditorClassIdentifier: 
+  id: 1
+  displayName: 
+  icon: {fileID: 21300000, guid: 56da67e2e2721b349936fb9f8ee93d9a, type: 3}
+  prefab: {fileID: 5984986063477290966, guid: 1e47529d6a8a2634d973d309e9ab1a89, type: 3}
+  canBePlanted: 1

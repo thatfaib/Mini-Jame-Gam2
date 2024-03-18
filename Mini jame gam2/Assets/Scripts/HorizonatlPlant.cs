@@ -8,12 +8,7 @@ public class col : MonoBehaviour
     [SerializeField] float timer = 2f;
     [SerializeField] GameObject pustblume;
     float countdown = 1f;
-    void Start()
-    {
         
-    }
-
-    
     void Update()
     {
         if(countdown < 0) {

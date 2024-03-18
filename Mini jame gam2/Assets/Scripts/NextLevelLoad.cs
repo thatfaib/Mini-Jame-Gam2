@@ -23,7 +23,7 @@ public class NextLevelLoad : MonoBehaviour {
         if(start == true) {
             transitionSprite.transform.position -= transitionSprite.transform.position * Time.deltaTime * 1.5f;
 
-            if (transitionSprite.transform.position.x < moveTowards.transform.position.x) {
+            if (transitionSprite.transform.position.x < moveTowards.transform.position.x + 0.03f) {
                 SceneManager.LoadScene(nextSceneID);
                 start = false;
             }
